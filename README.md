@@ -5,7 +5,8 @@ This project is a simple web application that fetches random quotes from an API 
 
 The purpose of this project was to experiment with webpack 5, SASS, and API calls in JavaScript. It serves as a great introduction to how these technologies can be used together to build a dynamic web application.
 
-![Uploading QuoteGenerator.gif…]()
+![QuoteGenerator](https://github.com/Ahmed-Amine-Hlel/Quote-Fetcher/assets/92888955/79603601-f95a-4654-a2b1-bff499a2a3fe)
+
 
 ## How to Use
 
