@@ -1,8 +1,11 @@
+
 # Quote Fetcher
 
 This project is a simple web application that fetches random quotes from an API and displays them to the user. The user can then generate a new quote at the click of a button.
 
 The purpose of this project was to experiment with webpack 5, SASS, and API calls in JavaScript. It serves as a great introduction to how these technologies can be used together to build a dynamic web application.
+
+![Uploading QuoteGenerator.gif…]()
 
 ## How to Use
 
