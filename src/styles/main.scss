@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+$primary-color: #394867;
+$secondary-color: #212a3e;
+$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  // background-color: $primary-color;
+  background-color: #20262e;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: $secondary-color;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 800px;
+  height: 500px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #5b0e2d;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #bb2649;
+  }
+}
+
+h3 {
+  margin: 0;
+  opacity: 0.5;
+  letter-spacing: 2px;
+  color: #f1f6f9;
+}
+
+.imageQuote {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.quotes {
+  width: 60px;
+  position: relative;
+  top: 40px;
+  left: -380px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+.quote {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+  color: #f1f6f9;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn {
+  background-color: #5b0e2d;
+  color: #f1f2f6;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  width: 220px;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@keyframes move-text {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    left: 0%;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+.textContainer {
+  position: relative;
+  width: 500px;
+}
+.moving-text {
+  position: absolute;
+  width: 100%;
+  top: -100px;
+  font-size: 40px;
+  text-align: center;
+  animation: move-text 7s linear infinite;
+  color: #f1f6f9;
+}
